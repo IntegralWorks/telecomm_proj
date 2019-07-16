@@ -21,7 +21,7 @@
 
 const int sampleWindow = 250; // Sample window width in mS (250 mS = 4Hz)
 unsigned int knock;
-int ledPin = 13;
+int ledPin = 13; //D7
 
 void setup() 
 {
@@ -58,7 +58,7 @@ void loop()
 
 
 Serial.println(volts);
- if (volts >=.02)
+ if (volts >=.02) //really low rn
  {
   //turn on LED
   digitalWrite(ledPin, HIGH);
